@@ -8,9 +8,9 @@
 
 ## 1. Project description
 
-The purpose of this project is to build a data infrastructure that is needed to get insight into the on-time performance of airlines in the united states. This KPI is particularly interesting because it allows airlines to compare their on-time performance with other airlines. This affords them the opportunity to dig into their operations and processes for area of improvement. 
+The purpose of this project is to build a data infrastructure that is needed to get insight into the on-time performance of airlines in the United States. This KPI is particularly interesting because it allows airlines to compare their on-time performance with other airlines. This affords them the opportunity to dig into their operations and processes for areas of improvement. 
 
-The US flights data was culled from [Bureau of Transportation Statistics (BTS)](https://www.transtats.bts.gov/Tables.asp?QO_VQ=EFD&QO_anzr=Nv4yv0r%FDb0-gvzr%FDcr4s14zn0pr%FDQn6n&QO_fu146_anzr=b0-gvzr). This contains monthly dataet from January to December 2020. The detailed data contains information about scheduled flight time, actual flight time, departure delay, cancellations, delay causes and so on. The schema of the data(`us-monthly-data` and `CARRIERS-METADATA`) pulled from the source are shown below.
+The US flights data was culled from [Bureau of Transportation Statistics (BTS)](https://www.transtats.bts.gov/Tables.asp?QO_VQ=EFD&QO_anzr=Nv4yv0r%FDb0-gvzr%FDcr4s14zn0pr%FDQn6n&QO_fu146_anzr=b0-gvzr). This contains monthly dataset from January to December 2020. The detailed data contains information about scheduled flight time, actual flight time, departure delay, cancellations, delay causes and so on. The schema of the data(`us-monthly-data` and `CARRIERS-METADATA`) pulled from the source are shown below.
 
 ![](images/us-flights-ERD.PNG)
 
@@ -44,7 +44,7 @@ The visual below shows the data catalog of the clean data and the data obtained 
 
 ![](images/Athena-catalog.PNG)
 
-Finally, Basic visualizations were performed using QuickSight as shown below. It was gathered that `Hawaii Airline` has the best on-time performance. However, It has the lowest number of flights.
+Finally, basic visualizations were performed using QuickSight as shown below. It was gathered that `Hawaii Airline` has the best on-time performance. However, It has the lowest number of flights.
 
 ![](images/summary-info.PNG)
 ![](images/otp.PNG)
@@ -52,7 +52,7 @@ Finally, Basic visualizations were performed using QuickSight as shown below. It
 
 ## 4. CONCLUSION
 
-In sum, further analysis can be performed on a variety of features to probe the data further. For example, a particular airline can decide to compare their operations with their competitors by analyzing data on the causes of delay. In addition, Network analysis can be performed in order to know the airline that dominates a certain flight route which can help other airlines' competitive strategy.
+In sum, further analysis can be performed on a variety of features to probe the data further. For example, a particular airline can decide to compare their operations with their competitors by analyzing data on the causes of delay. In addition, network analysis can be performed in order to know the airline that dominates a certain flight route which can help other airlines' competitive strategy.
 
 These use cases can be solved by using the data product generated in this project because appropriate information on the origin airport, destination airport, and delay causes were provided. The data product can withstand adhoc queries of and help whet the appetite of the exploratory adventure of the data analyst.
 
